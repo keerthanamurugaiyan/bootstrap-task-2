@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=Montserrat:wght@100;400;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=Montserrat:wght@100;400;700;900&family=Newsreader:opsz,wght@6..72,600;6..72,800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=Montserrat:wght@100;400;700;900&family=Mulish:wght@300;400;500;700&family=Newsreader:opsz,wght@6..72,300;6..72,400;6..72,700&family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <nav id="navbar" class="navbar p-3 navbar-expand-lg navbar-light bg-light shadow-sm d-flex sticky-top navbar-expand-lg-4">
+
+        <div class="container px-md-5">
+
+        <a class="blue navbar-brand text-dark fw-bold" href="#">Start Bootstrap</a>
+
+        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+        
+        <div class="d-flex mx-auto">
+            <h6 style="margin-top: 3px;">Menu</h6>
+            <i class="bx bx-menu mt-1"></i>
+        </div>
+
+    </button>
+
+        <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
+            <li class="nav-item">
+                <a href="#features" class="nav-link me-lg-3 text-dark" id="gray">Features</a>
+            </li>
+
+            <li class="nav-item">
+                <a href="#download" class="nav-link me-lg-3 text-dark" id="gray">Download</a>
+            </li>
+        </ul>
+
+        <button class="btn btn-primary rounded-pill px-3">
+            <div class="d-flex align-items-center">
+                <i class='bx bx-message-rounded-dots fs-4 mt-1 me-2' ></i>
+                <span class="small" data-bs-toggle="modal" data-bs-target="#sendmodal">Send Feedback</span>
+            </div>
+        </button>
+
+    </div>
+
+    </div>
+    </nav>
+
+    <div class="modal" id="sendmodal">
+        <div class="modal-dialog ">
+            <div class="modal-content">
+                
+                <div class="gradiant modal-header p-4">
+                    <h5 class="modal-title text-white" id="modallabel">Send feedback</h5>
+                    
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <form>
+                        <div class="form-floating mt-3">
+                            <input type="text" id="name" placeholder="Full Name" class="form-control border-2" required>
+                            <label for="name" class="form-lable">Full name</label>
+                        </div>
+
+                        <div class="form-floating mt-3">
+                            <input type="text" id="name" placeholder="Email address" class="form-control border-2" required>
+                            <label for="email" class="form-lable">Email address</label>
+                        </div>
+
+                        <div class="form-floating mt-3">
+                            <input type="text" id="name" placeholder="Phone number" class="form-control border-2">
+                            <label for="phone number" class="form-lable">Phone number</label>
+                        </div>
+
+                        <div class="form-floating mt-3">
+                            <textarea type="text" id="name"  placeholder="Message"  class="form-control border-2" style="height: 10rem;"></textarea>
+                            <label for="Message" class="form-lable">Message</label>
+                        </div>
+
+                        <button class="btn btn-primary btn- disabled rounded-pill w-100 p-2 fs-5 fw-1 mt-4">Submit</button>
+                    
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- <section>/ -->
+
+    <head>
+        <div class="container px-5 ps-5 mt-5 pt-5">
+            <div class="row">
+                <div class=" col-lg-5" >
+                    <div class=" mb-lg- text- text-lg-">
+                        <h1 class="app show display-1 lh-1 mb-3 fw-bold">Showcase your app beautifully.</h1>
+                        <p class="para text-secondary mb-5 fw-bold">Launch your mobile app landing page faster with this free, open source theme from Start Bootstrap!</p>
+                    </div>
+                
+                    <div class="d-flex flex-column flex-lg-row align-items-center mb-5">
+                        <a href="#" class="me-lg-3 mb-lg-0 mb-3"><img src="asset/google-play-badge.svg" alt="GOOLE-PLAY-BADGE" style="width: 132px;"></a>
+
+                        <a href="#" class="mb-3 me-lg-3 mb-lg-0"><img src="asset/app-store-badge.svg" alt="APP-STORE-BADGE"></a>
+                        
+                    </div>
+                </div>
+                <div class="ms-md-5  col-lg-6 mb-md-5 pb-md-5">
+                    <div class="d-flex d-md-flex justify-content-center align-items-center pe-md-5 me-md-5 ps-lg-0 pe-lg-0 me-lg-0 position-relative">
+                        <svg width="370px" height="500px" viewbox="0 0 100 100" class="d-none d-md-block">
+                              <linearGradient id="linear" xl="0%" yl="0%" x2="100%" y2=100%>
+                                <stop offset="40%" stop-color="#6610f2" />
+                                <stop offset="60%" stop-color="#9f1ae2" />
+                              </linearGradient>
+                            <circle class="d-none d-md-block" cx="50" cy="50" r="50" fill="url(#linear)"></circle>
+                            <image class=" d-none d-md-block" xlink:href="https://bootstrap2-840b2.web.app/img/mobile.jfif" 
+                            height="130px" 
+                            width="100px"                          
+                            x="0%" 
+                            y="-15">
+                        </image>
+                        </svg>
+
+                        <svg width="500px" height="500px" class="position-absolute d-none d-md-block" viewbox="-30 35 100 100">
+                            <circle cx="50" cy="50" r="1" fill="blue"></circle>
+                        </svg>
+
+                        <svg class="position-absolute d-none d-md-block" viewbox="-7 -85 100 100" width="400px" height="500px">
+                            <rect width="1.4" height="5.1" rx="1" ry="1" fill="blue" style="transform: rotate(25deg);"></rect>
+                        </svg>
+
+                        <svg class="position-absolute d-none d-md-block" viewbox="-9 -88.4 100 100" width="400px" height="500px">
+                            <rect width="1.4" height="5" rx="1" ry="1" fill="blue" style="transform: rotate(125deg);"></rect>
+                        </svg>
+
+                        <img src="asset/mobile.jpg" alt="MOBILE" class="d-block d-md-none" style="max-width: 100%; height: 100%;">
+                    </div>
+                </div>           
+            </div>
+        </div>
+    </head>
+
+    <section class="an p-5">
+        <div class="container pb-4">
+            <div class="row text-center px-5">
+                <h2 class="pt-5 col-lg-9 col-sm- fs-1 mx-auto fw-bold text-white px-lg-5">"An intuitive solution to a common problem that we all face, wrapped up in a single app!"</h2>
+            </div>
+            <img src="asset/tnw-logo.svg" alt="TNW-LOGO" class="pt-md-5 mx-auto d-block tnw" style="width: 100px;">
+        </div>
+    </section>
+    
+    <article id="features" class="pt-5">
+    <section>
+        <div class="container row justify-content-center ms-lg-0 ms-md-4 mt-5 mb-5 flex-row-reverse">
+            <div class="col-lg-6 mt-5 mb-5 d-flex container">
+            <div class="row">
+            <div class='col-lg-6 col-md-6 text-center'>
+                <i class='icons bx bx-mobile-alt display-2'></i>
+                <h4 class="fw-bold pt-3">Device Mockups</h4>
+                <p class="para text-secondary pt-1">Ready to use HTML/CSS device mockups, no Photoshop required!</p>
+            </div>
+
+            <div class="col-lg-6 col-md-6 text-center ps-4">    
+                <i class='icons bx bx-camera display-2'></i>
+                <h4 class="fw-bold pt-3">Flexible Use</h4>
+                <p class="para text-secondary pt-1">Put an image, video, animation, or anything else in the screen!</p>
+            </div>
+
+            <div class="col-lg-6 col-md-6 text-center mt-md-5">
+                <i class='icons bx bx-gift display-2'></i>
+                <h4 class="fw-bold pt-3">Free to Use</h4>
+                <p class="para text-secondary">As always, this theme is free to download and use for any purpose!</p>
+            </div>
+
+            <div class="col-lg-6 col-md-6 text-center ps-4 mt-md-5">    
+                <i class='icons bx bx-badge-check display-2'></i>
+                <h4 class="fw-bold pt-3">Open Source</h4>
+                <p class="para text-secondary pt-1">Since this theme is MIT licensed, you can use it commercially!</p>
+            </div>
+            </div>
+        </div>
+        <div class="col-lg-6 position-relative d-flex">
+            <svg width="500px" height="500px" viewbox="-89.5 -11 100 100" class="position-absolute d-none d-md-block">
+                <rect rx="1" ry="1" height="1.2" width="4.2" fill="blue" style="transform: rotate(30deg);"></rect>
+            </svg>
+            <svg width="500px" height="500px" viewbox="-92.6 -11 100 100" class="position-absolute d-none d-md-block">
+                <rect rx="1" ry="1" height="1.2" width="4.2" fill="blue" style="transform: rotate(120deg);"></rect>
+            </svg>
+            <svg class="position-absolute d-none d-md-block" viewbox="-1 -60 100 100">
+                <circle cx="20" cy="9" r="1" fill="blue"></circle>
+            </svg>
+            <svg width="500px" height="500px" viewbox="0 0 100 100">
+                <defs>
+                    <lineargradient id="linear2" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="20%" stop-color="#2937f0" ></stop>
+                        <stop offset="60%"stop-color="#9f1ae2" ></stop>
+                    </lineargradient>
+                </defs>
+                
+                <circle class="d-block d-lg-none d-none d-md-block ms-5 ps-5" cx="60" cy="50" r="37" fill="url(#linear2)"></circle>
+                <circle class="d-none d-lg-block" cx="50" cy="50" r="25" fill="url(#linear2)"></circle>
+                <image xlink:href="asset/mobile.jpg" x="15" y="6" height="90px" width="90px" class="ps-lg-0 ps-md-5"></image>
+            </svg>
+
+        </div>
+        </div>
+    </section>
+</article>
+
+    <section class="a bg-light">
+        <div class="container pt-5 pb-5">
+            <div class=" row flex-md-colum flex-sm-colum">
+                <div class="col-lg-6 px-5 ">
+                    <h1 class="app display-4 fw-bold col-lg-12 mt-5 pt-5 px-3">Enter a new age of web design</h1>
+                    <p class="para text-secondary fs-5 col-lg-11 px-3 mt-3">This section is perfect for featuring some information about your application, why it was built, the problem it solves, or anything else! There's plenty of space for text here, so don't worry about writing too much.</p>
+                </div>
+
+                <div class="col-lg-6 px-5 img-fluid col-md-7 mx-md-auto col-sm-7 mx-sm-auto">
+                    <img class="cir rounded-circle" src="asset/circle.jpg" alt="CIRCLE" width="100%" height="100%">
+                </div>
+            
+            </div>
+
+        </div>
+    </section>
+
+    
+    <section class=" mt-5">  
+        <div class="photo ps-5">
+            <div class="photocont ps-5 ms-2">
+                <h1 class="app text-white fw-bold display-2">Stop waiting.</h1>
+                <h1 class="app text-white fw-bold display-2">Start building.</h1>
+                <button class="para btn btn-outline-light rounded-pill p-3 mt-2">Download for free</button>
+            </div>
+        </div>  
+    </section>
+
+    <article id="download"></article>
+    <foot>
+        <div class="container-fluid color text-center">
+            <h4 class="get text-white fw-bold">Get the app now!</h4>
+        <div class="mt-4 flex-column d-flex flex-lg-row justify-content-center">
+            <a href=""><img class="me-lg-0" src="asset/google-play-badge.svg" alt="GOOLE-PLAY-BADGE" width="137px"></a>
+            <a href=""><img class="top me-lg-0 ps-lg-3" src="asset/app-store-badge.svg" alt="APP-STORE-BADGE"></a>
+        </div>
+        </div>
+    </foot>
+
+    <footer class="bg-black text-center py-5">
+        <div class="get container text-white-50 small">
+            <div class="mb-2">&copy Your Website 2023. All Rights Reserved.</div>
+            <a href="#">Praivacy</a>
+            <span class="mx-1">.</span>
+            <a href="#">Terms</a>
+            <span class="mx-1">.</span>
+            <a href="#">FAQ</a>
+        </div>
+    </footer>
+
+
+
+</body>
+</html>

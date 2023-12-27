@@ -1,0 +1,111 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.app{
+    font-family: "Newsreader"
+}
+
+#gray:hover{
+    color: gray !important;
+}
+
+.blue{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.blue:hover{
+    color: rgb(30, 30, 226) !important;
+}
+
+.gradiant{
+    background: linear-gradient(to right, #2937f0, #9f1ae2);
+}
+
+.para{
+    font-family: "Mulish", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji !important;
+    font-size: 1.0rem;
+}
+
+.an{
+    background: linear-gradient(to right, #2937f0, #9f1ae2);
+    font-family: "newsreader"; 
+}
+
+.icons{
+    background: -webkit-linear-gradient( #2937f0, #9f1ae2);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.photo{
+    position: relative;
+    background-image: url('asset/writing.jpg');
+    background-position: center;
+    background-size: cover;
+    padding: 12rem;
+}
+.photo:before{
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    height: 100%; 
+    width: 100%;
+}
+.photocont{
+    position:relative;
+    /* z-index: 1; */
+}
+.color{
+    background: linear-gradient(to right, #2937f0, #9f1ae2);
+    padding: 6rem;
+}
+
+.get{
+    font-family: "Mulish", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji !important;
+}
+
+footer a{
+    text-decoration: none;
+    color: rgb(255, 255, 255, 0.5);
+}
+
+footer a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+@media only screen and (max-width:425px) {
+    .an{
+        margin-top: 40px;
+    }
+
+    .pho{
+        margin-top: -280px;
+    }
+
+    .a{
+        margin-top: -190px;
+    }
+
+    .tnw{
+        margin-top: 22px;
+    }
+}
+
+@media only screen and (max-width:1024px) and (min-width:769px) {
+    .cir{
+        width: 120%;
+        height: 90%;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .top{
+        margin-top: 20px;
+    }
+}
